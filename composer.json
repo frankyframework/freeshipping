@@ -1,0 +1,23 @@
+{
+    "name": "frankyframework/freeshipping",
+    "type": "franky-module",
+    "description": "Ecommerce",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Ussiel Acevedo",
+            "email": "ussiel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "frankyframework/module-installer-plugin" : "1.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "FreeShipping\\": "src/"
+        }
+    },
+    "license": "MIT"
+}
