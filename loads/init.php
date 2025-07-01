@@ -1,0 +1,2 @@
+<?php
+include 'util.php';
