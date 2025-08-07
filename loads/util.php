@@ -1,11 +1,11 @@
 <?php
 function getEnabled()
 {
-    if(getCoreConfig("ecommerce/free-shipping/enabled") == 0) {
+    if(getCoreConfig("ecommerce/free_shipping/enabled") == 0) {
         return false;
     }
     $MyCarrito = getInfoCarrito();
-    if($MyCarrito["totalPlain"] < getCoreConfig("ecommerce/free-shipping/minimo")) {
+    if($MyCarrito["totalItemsPlain"] < getCoreConfig("ecommerce/free_shipping/minimo")) {
         return false;
     }
     return true;
